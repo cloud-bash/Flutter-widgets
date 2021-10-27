@@ -1,0 +1,27 @@
+import 'package:flutter/cupertino.dart';
+
+class SizedBoxSmall extends StatelessWidget {
+  const SizedBoxSmall({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .01,
+    );
+  }
+}
+
+class SizedBoxMedium extends StatelessWidget {
+  const SizedBoxMedium({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .05,
+    );
+  }
+}
